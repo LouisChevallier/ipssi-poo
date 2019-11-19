@@ -12,7 +12,7 @@ class Diviseur {
         if($diviseur === 0){
             throw new DivisionBy0Exception();
         }
-        if(empty($index) || empty($diviseur)){
+        if($index == '' || $diviseur == ''){
             throw new EmptyInputException();
         }
         if($index > (($index < 0) || count($valeurs)-1)){
